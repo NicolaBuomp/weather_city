@@ -9,7 +9,7 @@ const Search = styled.div`
 
     input{
         min-width: 380px;
-    min-height: 130px;
+        min-height: 130px;
         margin: 15px 0;
         padding-left: 30px;
         border: none;
@@ -24,7 +24,8 @@ const Search = styled.div`
         }
     }
     h2{
-        padding-left: 15px; 
+        padding-left: 15px;
+        padding-bottom: 10px;
     }
 `
 const Button = styled.button`
@@ -33,7 +34,7 @@ const Button = styled.button`
     border: none;
     border-radius: 20px;
     position:absolute;
-    top: 44px;
+    top: 54px;
     right: 0;
     background: linear-gradient(180deg, rgba(89,128,233,1) 0%, rgba(114,158,238,1) 100%);
     font-size: 30px;
@@ -75,7 +76,7 @@ const Search_Location = () => {
             <Search>
                 <h2>Localization</h2>
                 <Banner>
-                    <i class="fas fa-map-marker-alt"></i>
+                    <i className="fas fa-map-marker-alt"></i>
                     <p>Add localization</p>
                 </Banner>
             </Search>

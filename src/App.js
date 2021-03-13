@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { getData } from './api/api'
-import BigBanner from './component/BigBanner'
-import SmallBanner from './component/SmallBanner'
-import RightWrapper from './component/RightWrapper'
-import CenterWrapper from './component/CenterWrapper'
-import LeftWrapper from './component/LeftWrapper'
+import BigBanner from './components/BigBanner'
+import SmallBanner from './components/SmallBanner'
+import RightWrapper from './components/RightWrapper'
+import CenterWrapper from './components/CenterWrapper'
+import LeftWrapper from './components/LeftWrapper'
 import styled from 'styled-components'
 import './BaseLayout.css'
 
