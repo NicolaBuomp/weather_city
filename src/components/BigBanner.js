@@ -13,15 +13,16 @@ const gradients = {
 }
 
 const Wrapper = styled.div`
-    width:70%;
-    min-width: 600px;
+    width:100%;
     min-height: 330px;
     background-image: url(${props => props.img});
     background-size: cover;
-    padding: 50px 0 0 100px;
+    padding: 30px 0;
+    margin-bottom: 20px;
     border-radius: 20px;
     box-shadow: 2px 7px 39px -16px rgba(0,0,0,0.65);
     position: relative;
+    text-align: center;
 `
 
 const TitleCity = styled.h1`
@@ -42,11 +43,11 @@ const TempWidget = styled.div`
     height: 250px;
     width: 20%;
     max-width: 90px;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
     color: #fff;
     position: absolute;
-    left: -50px;
+    left: -20px;
     top: 40px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -55,6 +56,10 @@ const TempWidget = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    img{
+        width: 100%;
+        padding-top: 10px;
+    }
 `
 
 

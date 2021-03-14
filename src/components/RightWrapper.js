@@ -2,13 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
-    
+    margin-top: 20px;
+    width: 100%;
 `
 const Search = styled.div`
     position:relative;
 
     input{
-        min-width: 380px;
+        width: 100%;
         min-height: 130px;
         margin: 15px 0;
         padding-left: 30px;
@@ -50,7 +51,6 @@ const Banner = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-width: 380px;
     min-height: 130px;
     padding: 8px;
     margin: 15px 0;
@@ -71,7 +71,7 @@ const Search_Location = () => {
             <Search>
                 <h2>Search</h2>
                 <input type="text" placeholder="ex: Miami"/>
-                <Button type="submit"><i class="fas fa-search"></i></Button>
+                <Button type="submit"><i className="fas fa-search"></i></Button>
             </Search>
             <Search>
                 <h2>Localization</h2>

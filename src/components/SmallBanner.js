@@ -15,14 +15,13 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
     color: #FFFFFF;
 `
 const Banner = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-width: 380px;
+    width: 100%;
     min-height: 130px;
     padding: 8px;
     margin: 15px 0;
@@ -39,9 +38,7 @@ const AddBanner = styled.div`
     cursor:pointer;
     font-weight: 700;
     color: #01175F;
-`
-const AddTitle = styled.p`
-    font-size: 18px;
+    font-size: 22px;
 `
 const Description = styled.div`
     font-size: 18px;
@@ -63,7 +60,7 @@ const SmallBanner = (props) => {
     return (
         <Wrapper>
             <AddBanner>
-                <AddTitle>+ Aggiungi città</AddTitle>
+                <p><i className="far fa-plus-square"></i> Aggiungi città</p>
             </AddBanner>
 
             <Banner gradients={gradients[props.bologna.weather[0].main]}>

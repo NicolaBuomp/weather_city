@@ -10,7 +10,7 @@ import './BaseLayout.css'
 
 const Container = styled.div `
   width: 100%;
-  padding: 30px 50px;
+  padding: 10px 20px;
 `
 
 const TopContainer = styled.div `
@@ -18,15 +18,14 @@ const TopContainer = styled.div `
   padding-bottom: 40px;
   display: flex;
   align-items:center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction:column;
 `
 
 const BottomContainer = styled.div `
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  align-items:center;
+  flex-direction:column;
 `
 
 const App = () => {
