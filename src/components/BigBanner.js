@@ -18,11 +18,16 @@ const Wrapper = styled.div`
     background-image: url(${props => props.img});
     background-size: cover;
     padding: 30px 0;
-    margin-bottom: 20px;
     border-radius: 20px;
     box-shadow: 2px 7px 39px -16px rgba(0,0,0,0.65);
     position: relative;
     text-align: center;
+    @media (min-width: 1200px) {
+        width: 70%;
+        text-align: left;
+        padding: 30px 100px;
+        margin-right: 10px;
+  }
 `
 
 const TitleCity = styled.h1`
@@ -40,6 +45,7 @@ const Condition = styled.p`
     text-transform: capitalize;
 `
 const TempWidget = styled.div`
+    text-align: center;
     height: 250px;
     width: 20%;
     max-width: 90px;

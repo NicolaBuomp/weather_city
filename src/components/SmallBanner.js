@@ -15,7 +15,18 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
     color: #FFFFFF;
+    @media (min-width: 576px) {
+        flex-direction: row;
+    }
+    @media (min-width: 1200px) {
+        flex-direction: column;
+        min-width: 380px;
+        min-height: 330px;
+        margin-left: 10px;
+        justify-content: space-between;
+    }
 `
 const Banner = styled.div`
     display: flex;
@@ -28,6 +39,12 @@ const Banner = styled.div`
     border-radius: 20px;
     box-shadow: 2px 7px 39px -16px rgba(0,0,0,0.45);
     background: ${(props) => props.gradients || "linear-gradient(90deg, rgba(78,78,78,1) 0%, rgba(148,148,148,1)100%)"};
+    @media (min-width: 576px) {
+        margin-right: 15px;
+    }
+    @media (min-width: 1200px) {
+        margin: 0;
+    }
 `
 const AddBanner = styled.div`
     width: 100%;
@@ -39,6 +56,9 @@ const AddBanner = styled.div`
     font-weight: 700;
     color: #01175F;
     font-size: 22px;
+    @media (min-width: 1200px) {
+        margin: 0;
+    }
 `
 const Description = styled.div`
     font-size: 18px;

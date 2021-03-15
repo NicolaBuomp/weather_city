@@ -11,21 +11,35 @@ import './BaseLayout.css'
 const Container = styled.div `
   width: 100%;
   padding: 10px 20px;
+  max-width: 1800px;
+  margin: 0 auto;
 `
 
 const TopContainer = styled.div `
   width: 100%;
+  height: 50%;
   padding-bottom: 40px;
   display: flex;
   align-items:center;
   flex-direction:column;
+  @media (min-width: 1200px) {
+      flex-direction: row;
+      justify-content: space-between;
+  }
 `
 
 const BottomContainer = styled.div `
   width: 100%;
+  height: 50%;
   display: flex;
   align-items:center;
   flex-direction:column;
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
 `
 
 const App = () => {
@@ -67,7 +81,7 @@ const App = () => {
 
       <BottomContainer>
         <LeftWrapper />
-        <CenterWrapper />
+        <CenterWrapper torino={torino}/>
         <RightWrapper />
       </BottomContainer>
 

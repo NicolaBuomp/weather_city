@@ -2,12 +2,20 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
-    margin-top: 20px;
+    margin-top: 30px;
     width: 100%;
+    @media (min-width: 576px) {
+        display: flex;
+        justify-content: space-between;
+    }
+    @media (min-width: 1200px) {
+        flex-direction: column;
+        width: 380px;
+        height: 430px;
+    }
 `
 const Search = styled.div`
     position:relative;
-
     input{
         width: 100%;
         min-height: 130px;
@@ -27,6 +35,12 @@ const Search = styled.div`
     h2{
         padding-left: 15px;
         padding-bottom: 10px;
+    }
+    @media (min-width: 576px) {
+        width: 45%;
+    }
+    @media (min-width: 1200px) {
+        min-width: 380px;
     }
 `
 const Button = styled.button`
@@ -62,6 +76,9 @@ const Banner = styled.div`
     p{
         padding-top: 10px;
         font-weight: 700;
+    }
+    @media (min-width: 1200px) {
+        min-width: 380px;
     }
 `
 
